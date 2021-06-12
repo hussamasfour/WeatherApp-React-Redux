@@ -1,6 +1,5 @@
 import { connect } from "react-redux";
 import { Card, Image, Header } from "semantic-ui-react";
-import { fetchWeather } from "../../action";
 import NavBar from "../weather/NavBar";
 const Current = (props) => {
   if (props.weather.length === 0) {
@@ -44,7 +43,7 @@ const Current = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  return { weather: Object.values(state.weather.weather) };
+  return { weather: Object.values(state.weather.weatherData) };
 };
 
-export default connect(mapStateToProps, { fetchWeather })(Current);
+export default connect(mapStateToProps)(Current);

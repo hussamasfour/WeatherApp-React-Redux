@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { fetchWeather } from "../../action";
 import NavBar from "./NavBar";
 
 const ThreeDays = (props) => {
@@ -61,8 +60,8 @@ const ThreeDays = (props) => {
 };
 const mapStateToProps = (state) => {
   return {
-    weather: Object.values(state.weather.weather),
+    weather: Object.values(state.weather.weatherData),
   };
 };
 
-export default connect(mapStateToProps, { fetchWeather })(ThreeDays);
+export default connect(mapStateToProps)(ThreeDays);

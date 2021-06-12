@@ -5,8 +5,8 @@ import { createStore, applyMiddleware, compose } from "redux";
 import reduxThunk from "redux-thunk";
 import reducer from "./reducer";
 import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
-
+import { Router } from "react-router-dom";
+import history from "./history";
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // create the redux store
@@ -16,9 +16,9 @@ const store = createStore(
 );
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <Router history={history}>
       <App />
-    </BrowserRouter>
+    </Router>
   </Provider>,
   document.getElementById("root")
 );
