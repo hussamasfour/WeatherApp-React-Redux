@@ -1,10 +1,15 @@
+// Weather reducer
 
-// Weather reducer 
-export default (state = {}, action) => {
+const initialState = {
+  weather: {},
+  error: {},
+};
+export default (state = initialState, action) => {
   switch (action.type) {
     case "FETCH_WEATHER":
-      return { ...state, [action.payload]: action.payload };
-
+      return { ...state, weather: action.payload };
+    case "FETCH_ERROR":
+      return { ...state, error: action.payload };
     default:
       return state;
   }
