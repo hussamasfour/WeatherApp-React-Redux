@@ -4,23 +4,35 @@ import NavBar from "./NavBar";
 
 const Hourly = (props) => {
   // function to render the weather
-  console.log(props.weather[2].forecastday[1]);
+  const compareDate = (date, d) => {
+    let f = new Date(date);
+
+    let e = new Date(d);
+
+    if (f.getHours() >= e.getHours()) {
+      return f.getHours();
+    }
+  };
+  console.log(props.weather[0].localtime);
   const renderWeather = () => {
     return props.weather[2].forecastday[1].hour.map((weather) => {
-      return (
-        <tr key={weather.time}>
-          {/* <td>{getDayName(weather.date)}</td> */}
-          {/* <td>
+      var s = compareDate(weather.time, props.weather[0].localtime);
+      if (s) {
+        return (
+          <tr key={weather.time}>
+            {/* <td>{getDayName(weather.date)}</td> */}
+            {/* <td>
             <img src={weather.hour.condition.icon} alt="weather icon" />
             {weather.day.condition.text}
           </td> */}
-          <td>{weather.time} °F</td>
-          {/* <td>{weather.day.maxtemp_f} °F</td>
+            <td>{s} </td>
+            {/* <td>{weather.day.maxtemp_f} °F</td>
           <td>{weather.day.avghumidity} %</td>
           <td>{weather.day.maxwind_mph} mph</td>
           <td>{weather.day.totalprecip_in} %</td> */}
-        </tr>
-      );
+          </tr>
+        );
+      }
     });
   };
 
@@ -28,7 +40,7 @@ const Hourly = (props) => {
     return <div>Please Enter city name first </div>;
   }
   return (
-    <div>
+    <div className="ui container">
       <NavBar />
 
       <div className="ui segment">

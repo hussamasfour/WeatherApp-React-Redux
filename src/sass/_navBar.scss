@@ -1,0 +1,22 @@
+///////////////////
+// NAV 
+.nav{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    margin: 1rem 1rem;;
+    border-radius: 10px;
+ 
+    background-color: #7AD7F0;
+
+    &__link{
+      text-decoration: none;
+      padding: 2rem;
+      color: white;
+    
+    }
+  }

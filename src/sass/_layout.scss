@@ -1,0 +1,24 @@
+.container {
+  max-width: 100rem;
+  margin: 8rem auto;
+  // background-image: url("../img/moon.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right bottom,
+    #7AD7F0,
+    #F5FCFF
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 20rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+//////////////////
+// CARD FOR CURRENT COMPONENT

@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-      <div className="ui pointing menu">
-        <NavLink className=" item" to="/current">
+      <div className="nav">
+        <NavLink className="nav__link" to="/current">
           Now
         </NavLink>
-        <NavLink className="item" to="/weather">
+        <NavLink className="nav__link" to="/weather">
           3 days
         </NavLink>
-        <NavLink className="item" to="/hourly">
+        <NavLink className="nav__link" to="/hourly">
           Hourly
         </NavLink>
       </div>
