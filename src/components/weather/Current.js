@@ -17,7 +17,7 @@ const Current = (props) => {
           <h2>
             {props.weather[0].name}, {props.weather[0].region}
           </h2>
-          <span className="timeStamp">
+          <span className="card__city-timeStamp">
             As of {currentWeather.last_updated.split(" ")[1]}
           </span>
         </div>
@@ -27,8 +27,9 @@ const Current = (props) => {
             src={currentWeather.condition.icon}
             alt="weather status"
           />
+
           <div className="card__header-temp">
-            <span className="temp">{currentWeather.temp_f}°</span>
+            <span className="temp">{currentWeather.temp_f | 0}°</span>
           </div>
         </div>
 

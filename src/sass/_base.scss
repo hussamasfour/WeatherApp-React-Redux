@@ -1,5 +1,5 @@
 :root {
- 
+  --color-white: #fff;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -21,11 +21,12 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   color: var(--color-grey-dark-2);
-
   line-height: 1.7;
-
   min-height: 100vh;
+  background-color: #ffffb5;
+  background-image: linear-gradient(315deg, #ffffb5 0%, #247ba0 74%);
 }
+

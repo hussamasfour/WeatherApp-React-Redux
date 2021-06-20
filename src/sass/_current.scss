@@ -1,22 +1,30 @@
 .card{
-    background-color: #fff;
+    background-color: var(--color-white);
     font-size: 1.8rem;
     border-radius: 10px;;
     margin: 1rem;
-  
+    padding-bottom: 0;
+
+
     &__city{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items:flex-end;      
+      align-items:flex-start;      
       color: black;
       font-weight: 600;
+      padding: 2rem;
     }
+
+    &__city-timeStamp{
+      color: var(--color-grey-dark-3);
+    }
+
     &__header{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 2.4rem;
+      padding: 0 2.4rem;
       margin: 0 2rem 2rem 2rem;
     }
   
@@ -26,8 +34,8 @@
       flex-direction: column;
       justify-content: center;  
       align-items: center;
-      font-size: 5rem;
-      font-weight: 600;
+      font-size: 7rem;
+      font-weight: 400;
       color: black;
     }
 

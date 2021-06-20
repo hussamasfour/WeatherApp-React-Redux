@@ -6,17 +6,29 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #fff;
+    border: 2px solid  var(--color-white);
     text-transform: uppercase;
     margin: 1rem 1rem;;
     border-radius: 10px;
  
-    background-color: #7AD7F0;
+    background-color: #00a4e4;
 
     &__link{
       text-decoration: none;
       padding: 2rem;
-      color: white;
+      color:  var(--color-white);
+      
     
+      &:hover{
+        color: #7AD7F0;
+        background-color:  var(--color-white);
+      }
     }
+
+
+   &__selected{
+     background-color:  var(--color-white);
+     color: #7AD7F0;
+     
+   }
   }

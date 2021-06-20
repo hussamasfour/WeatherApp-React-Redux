@@ -17,8 +17,6 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="search">
-        <h1 className="search__header">Search city name or zipcode:</h1>
-
         <form
           className="search__form"
           onSubmit={this.props.handleSubmit(this.onSubmit)}
@@ -28,7 +26,7 @@ class SearchBar extends React.Component {
             component="input"
             type="text"
             value={this.state.val}
-            placeholder="Search city or zipcode"
+            placeholder="Search Weather by City or Zipcode"
             onChange={(e) => {
               this.setState({ val: e.target.value });
             }}

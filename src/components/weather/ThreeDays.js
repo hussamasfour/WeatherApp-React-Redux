@@ -37,7 +37,7 @@ const ThreeDays = (props) => {
   }
 
   return (
-    <div className="ui container">
+    <div className="">
       <NavBar />
       <div className="ui segment">
         <table className="ui seven column table">
