@@ -155,7 +155,7 @@ const Current = (props) => {
               <span>Pressure:</span>
             </div>
             <div className="list__item-data">
-              {currentWeather.pressure_in} %
+              {currentWeather.pressure_in} in
             </div>
           </div>
           <div className="list__item">
