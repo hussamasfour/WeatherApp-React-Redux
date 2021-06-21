@@ -4,13 +4,13 @@ import "../../sass/main.scss";
 
 const Current = (props) => {
   if (props.weather.length === 0) {
-    return <div>Please Enter city name first</div>;
+    return <div></div>;
   }
 
   const currentWeather = props.weather[1];
 
   return (
-    <div className="">
+    <div>
       <NavBar />
       <div className="card">
         <div className="card__city">

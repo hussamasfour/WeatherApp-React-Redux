@@ -1,4 +1,3 @@
-import Raect from "react";
 const Spinner = (props) => {
   return <div>{props.message}</div>;
 };

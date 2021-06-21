@@ -31,10 +31,6 @@ class SearchBar extends React.Component {
               this.setState({ val: e.target.value });
             }}
           />
-          {this.props.err ? (
-            <div className="">{this.props.err.error.message}</div>
-          ) : null}
-
           <button
             className="search__button"
             type="submit"
@@ -53,6 +49,9 @@ class SearchBar extends React.Component {
             </svg>
           </button>
         </form>
+        {this.props.err ? (
+          <div className="search__error">{this.props.err.error.message}</div>
+        ) : null}
         {this.props.loading ? <Spinner message="Loading" /> : null}
       </div>
     );
