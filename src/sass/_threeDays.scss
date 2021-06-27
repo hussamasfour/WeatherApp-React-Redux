@@ -15,6 +15,10 @@
     
     &__date{
         flex: 0 0 8%;
+
+        @media screen and (max-width: 800px) {
+            flex: 0 0 20%;
+        }
     }
 
     &__temp{
@@ -46,6 +50,7 @@
 
         width: 6rem;
         height: 6rem;
+ 
     }
     &__text{
         margin-left: 1rem;
@@ -59,9 +64,11 @@
     }   
 
     &__wind{
-        flex: 0 0 10%;
+        flex: 0 0 12%;
         display: flex;
         align-items: center;
-
+        @media screen and(max-width: 800px) {
+            flex: 0 0 16%;
+        }
     }
 }

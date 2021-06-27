@@ -71,5 +71,9 @@
    &__item-icon{
      margin-right: 1.5rem;
      fill: #7AD7F0;
+
+     @media screen and(max-width: 800px) {
+        width: 15px;
+    }
    }
   }

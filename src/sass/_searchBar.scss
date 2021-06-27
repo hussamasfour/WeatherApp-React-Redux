@@ -36,20 +36,18 @@
       cursor: pointer;
       margin: 0;
       padding: 2.4rem;
- 
     }
 
     &__icon{
-        
         height: 2rem;
         width: 2rem;
-        fill: #fff;
+        fill: var(--color-white);
     }
 
     &__error{
       background-color: #ffe8e6;
       padding: 1rem;;
       color: #9f3a38;
-    width: 100%;
+      
     }
   }
