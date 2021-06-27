@@ -4,15 +4,8 @@ import { connect } from "react-redux";
 import NavBar from "./NavBar";
 import "../../sass/main.scss";
 import { ReactComponent as WindLogo } from "../../assets/wind.svg";
+import { getDayName } from "../../util/weather.util";
 const ThreeDays = (props) => {
-  // function to get day name of a selected date
-
-  const getDayName = (date) => {
-    var days = ["Mon", "Tus", "Wed", "Thu", "Fri", "Sat", "Sun"];
-    var d = new Date(date);
-    return days[d.getDay()];
-  };
-
   // function to render the weather
   const renderWeather = () => {
     return props.weather[2].forecastday.map((weather) => {

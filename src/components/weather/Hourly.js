@@ -1,22 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
+
 import NavBar from "./NavBar";
+import { formatTime } from "../../util/weather.util";
 import "../../sass/main.scss";
+
 import { ReactComponent as WindLogo } from "../../assets/wind.svg";
 import { ReactComponent as RainChance } from "../../assets/eyedropper.svg";
 const Hourly = ({ weather }) => {
-  const formatTime = (date, d) => {
-    let weatherTime = new Date(date);
-    let currentTime = new Date(d);
-
-    if (weatherTime.getHours() >= currentTime.getHours()) {
-      let amOrPm = weatherTime.getHours() >= 12 ? "pm" : "am";
-      let hour = weatherTime.getHours() % 12 || 12;
-      let finalTime = hour + ":00 " + amOrPm;
-      return finalTime;
-    }
-  };
-
   const renderWeather = () => {
     return weather.forecast.forecastday[1].hour.map((hour) => {
       let time = formatTime(hour.time, weather.location.localtime);
