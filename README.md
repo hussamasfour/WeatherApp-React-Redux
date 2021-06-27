@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+# Weather Forecast App
+
+
+## Features:
+
+  * Call API to get weather by city or zipcode.
+  * Use redux store to store API response.
+  * Use React Router to navigate between components.
+  * Use Redux Thunk for async calls.
+  * Use axios for calling weather API.
+
+
+## ScreenShots: 
+  
+![weatherHourly](https://user-images.githubusercontent.com/36235992/122858202-e408ea80-d2e7-11eb-9b47-b7a8d0d32280.jpg)
+
+
+![weatherDays](https://user-images.githubusercontent.com/36235992/122858176-d6ebfb80-d2e7-11eb-84e5-5297fe025741.jpg)
+
+
+![weatherNow](https://user-images.githubusercontent.com/36235992/122858219-ec612580-d2e7-11eb-933c-df470eafee7b.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
