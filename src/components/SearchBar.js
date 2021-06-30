@@ -50,7 +50,9 @@ class SearchBar extends React.Component {
           </button>
         </form>
         {this.props.err ? (
-          <div className="search__error">{this.props.err.error.message}</div>
+          <div className="search__error">
+            {this.props.err.response.data.message}
+          </div>
         ) : null}
         {this.props.loading ? <Spinner message="Loading" /> : null}
       </div>

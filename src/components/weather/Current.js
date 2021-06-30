@@ -9,10 +9,6 @@ import { ReactComponent as CompressLogo } from "../../assets/compress.svg";
 import { ReactComponent as CloudLogo } from "../../assets/cloud.svg";
 
 const Current = ({ weather }) => {
-  if (weather.length === 0) {
-    return <div></div>;
-  }
-
   const currentWeather = weather.current;
 
   return (

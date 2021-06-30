@@ -7,23 +7,23 @@ const initialState = {
 };
 export default (state = initialState, action) => {
   switch (action.type) {
-    case "LOADING":
+    case "FETCH_WEATHER_START":
       return {
         ...state,
         isLoading: true,
       };
-    case "FETCH_WEATHER":
+    case "FETCH_WEATHER_SUCCESS":
       return {
         ...state,
         weatherData: action.payload,
         isLoading: false,
         error: null,
       };
-    case "FETCH_ERROR":
+    case "FETCH_WEATHER_FAILURE":
       return {
         ...state,
         error: action.payload,
-        weatherData: {},
+        weatherData: null,
         isLoading: false,
       };
     default:
